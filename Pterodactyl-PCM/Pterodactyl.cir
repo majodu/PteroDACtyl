@@ -1,0 +1,26 @@
+.title KiCad schematic
+U1 /VCC Net-_C7-Pad1_ GND Net-_C7-Pad2_ Net-_C4-Pad1_ Net-_R1-Pad1_ Net-_R2-Pad2_ /VCC GND Net-_R3-Pad1_ /SDA /SCL NC_01 NC_02 NC_03 GND GND Net-_R5-Pad2_ NC_04 NC_05 /BCK /DIN /LRCK GND Net-_R4-Pad2_ Net-_C9-Pad2_ GND +3V3 PCM512x
+C6 /VCC GND .1U
+C2 /VCC GND .1U
+R1 Net-_R1-Pad1_ OUTL 470
+C1 /VCC GND 10U
+C10 GND +3V3 2.2U
+C9 GND Net-_C9-Pad2_ 2.2U
+C3 OUTL GND 2.2U
+C5 OUTR GND 2.2U
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 2.2U
+C4 Net-_C4-Pad1_ GND 2.2U
+H2 MountingHole
+H1 MountingHole
+R3 Net-_R3-Pad1_ GND 10K
+R4 /MUTE Net-_R4-Pad2_ 10K
+R5 +3V3 Net-_R5-Pad2_ 10K
+R2 OUTR Net-_R2-Pad2_ 470
+J1 OUTL OUTR Conn_01x02_Male
+J2 /VCC GND /MUTE /SDA /SCL /BCK /DIN /LRCK Conn_01x08_Male
+C8 /VCC GND 4.7U
+C11 GND /+3.3V 10U
+L1 Net-_L1-Pad1_ /+3.3V 2.2U
+U2 /VCC GND Net-_R6-Pad1_ /+3.3V Net-_L1-Pad1_ LM3670MF
+R6 Net-_R6-Pad1_ /VCC 100K
+.end
